@@ -1,17 +1,16 @@
 [atom]
-id = "horizons"
+id = "mkHorizon"
 version = "0.1.0"
 propagate = true
 src = "atom"
 
-[std]
-features = ["lib"]
+[features]
+default = ["lib", "pkgs"]
 
 [backend.nix]
 fetcher = "flake-lock"
 
 [fetch.rust-atom]
-name = "rust-atom"
 
-[fetch.horizons-rs]
-type = "local"
+[fetch.horizon-rs]
+type = "src"

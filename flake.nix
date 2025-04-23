@@ -1,20 +1,19 @@
 {
-  description = "horizons";
+  description = "mkHorizon";
 
   inputs = {
-    atom.url = "github:LiGoldragon/atom/atomicFlake-v1";
+    make-atom.url = "github:criome/make-atom/testing";
+
     system.url = "github:criome/system";
 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-atom.url = "github:criome/nixpkgs-atom";
-    nixpkgs-atom.inputs.nixpkgs.follows = "nixpkgs";
 
     rust-atom.url = "github:criome/rust-atom";
     rust-atom.inputs.nixpkgs.follows = "nixpkgs";
 
-    horizons-rs.url = "github:criome/horizons-rs";
-    horizons-rs.flake = false;
+    horizon-rs.url = "github:criome/horizon-rs";
+    horizon-rs.flake = false;
   };
 
-  outputs = inputs: inputs.atom.mkAtomicFlake inputs (./. + "/horizons@.toml");
+  outputs = inputs: inputs.make-atom.mkAtomFlake ./. inputs;
 }
