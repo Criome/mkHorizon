@@ -1,1 +1,1 @@
-{ Value = mod.make; }
+{ Value = std.readFile mod.make; }
