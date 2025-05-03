@@ -14,6 +14,11 @@
 
     horizon-rs.url = "github:criome/horizon-rs/testing";
     horizon-rs.flake = false;
+
+    rust-atom = {
+      url = "github:criome/rust-atom/testing";
+      inputs.make-atom.follows = "make-atom";
+    };
   };
 
   outputs = inputs: inputs.make-atom.mkAtomFlake ./. inputs;
