@@ -1,1 +1,1 @@
-{ Value = std.readFile mod.make; }
+{ Value = std.fromJSON (std.readFile mod.make); }
