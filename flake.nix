@@ -10,7 +10,7 @@
       inputs.make-atom.follows = "make-atom";
     };
 
-    horizon-data.url = "github:criome/horizon-data/testing";
+    criosphere.url = "github:criome/criosphere/testing";
 
     horizon-rs.url = "github:criome/horizon-rs/testing";
     horizon-rs.flake = false;

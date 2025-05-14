@@ -9,5 +9,5 @@ fetcher = "flake-lock"
 
 [fetch.horizon-cli]
 
-[fetch.horizon-data]
+[fetch.criosphere]
 type = "flake"

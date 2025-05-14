@@ -179,7 +179,7 @@
         "type": "github"
       }
     },
-    "horizon-data": {
+    "criosphere": {
       "inputs": {
         "goldragon": "goldragon",
         "maisiliym": "maisiliym",
@@ -189,14 +189,14 @@
         "lastModified": 1746302971,
         "narHash": "sha256-1epI11aCyND0EvWW6baPnbnYUueOCllEEDeUW5TLcn4=",
         "owner": "criome",
-        "repo": "horizon-data",
+        "repo": "criosphere",
         "rev": "6ec2c94b5c093b4e6db8f92a12a77611d1e3d5e8",
         "type": "github"
       },
       "original": {
         "owner": "criome",
         "ref": "testing",
-        "repo": "horizon-data",
+        "repo": "criosphere",
         "type": "github"
       }
     },
@@ -321,7 +321,7 @@
     "root": {
       "inputs": {
         "horizon-cli": "horizon-cli",
-        "horizon-data": "horizon-data",
+        "criosphere": "criosphere",
         "horizon-rs": "horizon-rs",
         "make-atom": "make-atom",
         "rust-atom": "rust-atom_2"
